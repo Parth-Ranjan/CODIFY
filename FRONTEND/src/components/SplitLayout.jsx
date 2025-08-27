@@ -10,7 +10,7 @@ const SplitLayout = () => {
   const handleReview = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:3000/ai/get-review", {
+      const res = await fetch("https://codelity.onrender.com/ai/get-review", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ code }),
